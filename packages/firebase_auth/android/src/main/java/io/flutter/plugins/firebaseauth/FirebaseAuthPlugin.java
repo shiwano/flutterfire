@@ -772,7 +772,7 @@ public class FirebaseAuthPlugin implements MethodCallHandler {
   private Map<String, Object> mapFromAdditionalUserInfo(AdditionalUserInfo info) {
     if (info != null) {
       Map<String, Object> additionalUserInfoMap = new HashMap<>();
-      additionalUserInfoMap.put("profile", info.getProfile());
+      // additionalUserInfoMap.put("profile", info.getProfile());
       additionalUserInfoMap.put("providerId", info.getProviderId());
       additionalUserInfoMap.put("username", info.getUsername());
       additionalUserInfoMap.put("isNewUser", info.isNewUser());
